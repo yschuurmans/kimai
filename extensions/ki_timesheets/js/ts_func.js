@@ -507,6 +507,7 @@ function ts_getDateFromStrings(dateStr, timeStr) {
  * @returns {Date}
  */
 function ts_getStartDate() {
+	$("#start_time").val($("#start_time").val().replace(".",":"));
 	return ts_getDateFromStrings($("#start_day").val(), $("#start_time").val());
 }
 
